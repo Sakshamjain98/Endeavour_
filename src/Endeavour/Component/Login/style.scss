@@ -1,0 +1,367 @@
+
+  
+  $border-width: 8px;
+  $stripe-width: 16px;
+  
+  .mail-wrapper {
+    position: relative;
+    // height: 1000px;
+  }
+  
+  .mail {
+    position: relative;
+    border-radius: 8px;
+    padding: calc(1em + #{$border-width});
+    width: 620px;
+    // height: 1000px;
+    // height: auto;
+    // padding: 0.5rem;
+    background-color: #fff;
+    box-shadow: 
+      inset 0 0 1px 1px rgb(9 0 80 / .2),
+      inset 0 -2px 1px rgb(9 0 80 / .1),
+      0 1px 2px rgb(9 0 80 / .2),
+      0 1px 8px rgb(9 0 80 / .1),
+    ;
+    overflow: hidden;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+       
+      clip-path: polygon(
+        0% 0%,
+        0% 100%,
+        $border-width 100%,
+        $border-width $border-width,
+        calc(100% - #{$border-width}) $border-width,
+        calc(100% - #{$border-width}) calc(100% - #{$border-width}),
+        $border-width calc(100% - #{$border-width}),
+        $border-width 100%,
+        100% 100%,
+        100% 0%,
+      );
+    }
+  }
+  
+  .mail-title {
+    margin-bottom: .5em;
+    font-weight: 600;
+    color: #2770cb;
+  }
+  
+  .mail-field {
+    display: block;
+    width: 100%;
+    font-style: italic;
+    text-decoration: none;
+    border-color: white;
+    
+    &:not(.content) {
+      margin-bottom: 8px;
+      background-image: linear-gradient(#a2a0ae 0 1px);
+      background-position-y: bottom;
+      background-size: 100% 1px;
+      background-repeat: no-repeat;
+    }
+    
+    &.content {
+      background-image: repeating-linear-gradient(
+        to bottom,
+        transparent 0 calc(1.5em - 1px),
+        #a2a0ae calc(1.5em - 1px) 1.5em,
+      );
+      background-attachment: local;
+      resize: none;
+    }
+    
+    &::placeholder {
+      font-style: normal;
+      color: #b5b2c6;
+    }
+  }
+  
+  .mail-content-section {
+    display: flex;
+    column-gap: 1.5em;
+    align-items: stretch;
+    margin-top: 1.5em;
+  }
+  
+  .mail-attachment-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    position: relative;
+    border: 1px dashed #a2a0ae;
+    border-radius: 4px;
+    padding: 4px 8px;
+    width: 110px;
+    height: 110px;
+    transition-property: border-color, background-color;
+    transition-duration: .2s;
+    
+    &:not(.filled):hover,
+    &.drag-over {
+      border-color: #2770cb;
+      background-color: rgb(39 112 203 / .1);
+    }
+  }
+  
+  .mail-attachment-label-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5em;
+    text-align: center;
+    font-size: .5em;
+    font-weight: 500;
+    color: #b5b2c6;
+    transition-property: color;
+    transition-duration: .2s;
+    
+    .mail-attachment-container:not(.filled):hover &,
+    .mail-attachment-container.drag-over & {
+      color: #2770cb;
+    }
+  }
+  
+  .mail-attachment-label-icon {
+    width: 28px;
+    height: 28px;
+    stroke: currentColor;
+  }
+  
+  .mail-attachment-wrapper {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: scale(1) rotate(-15deg);
+    filter: 
+      drop-shadow(0 1px 2px rgb(9 0 80 / .2))
+      drop-shadow(0 1px 8px rgb(9 0 80 / .1))
+    ;
+    transition-property: transform, opacity;
+    transition-duration: .4s, .2s;
+    
+    &.hidden {
+      transform: scale(0) rotate(0);
+      opacity: 0;
+    }
+  }
+  
+  .mail-attachment {
+    --corner-size: 28px;
+    $border-width: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    clip-path: polygon(
+      calc(100% - var(--corner-size)) 0,
+      100% var(--corner-size),
+      100% 100%,
+      0 100%,
+      0 0,
+    );
+    overflow: hidden;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 100%;
+      left: 100%;
+      border-radius: inherit;
+      width: 100%;
+      height: 100%;
+      transform: translate(calc(var(--corner-size) * -1), var(--corner-size));
+      background-image: linear-gradient(45deg, #fff, #b4b2c6);
+      box-shadow: 
+        -1px 1px 2px rgb(9 0 80 / .2),
+        -1px 1px 8px rgb(9 0 80 / .1),
+      ;
+    }
+  }
+  
+  .mail-attachment-image {
+    border-radius: 4px;
+    width: calc(100% - 16px);
+    height: calc(100% - 16px);
+    object-fit: contain;
+    
+    &.hidden {
+      display: none;
+    }
+  }
+  
+  .mail-attachment-extension {
+    color: #b4b2c6;
+    
+    &.hidden {
+      display: none;
+    }
+  }
+  
+  .mail-attachment-remove-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 4;
+    top: -10px;
+    right: -10px;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: #fff;
+    opacity: 0;
+    box-shadow:
+      0 1px 2px rgb(9 0 80 / .2),
+      0 1px 8px rgb(9 0 80 / .1),
+    ;
+    transition-property: transform, opacity;
+    transition-duration: .2s;
+    
+    .mail-attachment-container:hover & {
+      opacity: 1;
+    }
+    
+    &.hidden {
+      display: none;
+    }
+  }
+  
+  .mail-attachment-remove-button-icon {
+    width: 12px;
+    height: 12px;
+    fill: #a1a1ad;
+  }
+  
+  .mail-attachment-input {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+    &::file-selector-button {
+      display: none;
+    }
+    
+    &.hidden {
+      display: none;
+    }
+  }
+  
+  .mail-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5em;
+  }
+  
+  .mail-signature {
+    font-style: italic;
+  }
+  
+  .mail-button {
+    border: 1px solid #1f5cbf;
+    border-radius: 4px;
+    padding: 4px 12px;
+    margin-top: 10px;
+    background-color: #2770cb;
+    color: #fff;
+    box-shadow: 
+      inset 0 1px rgb(255 255 255 / .1),
+      inset 0 -1px rgb(0 0 0 / .1),
+      0 1px 2px rgb(9 0 80 / .2),
+      0 1px 8px rgb(9 0 80 / .1),
+    ;
+    transition-property: transform;
+    transition-duration: .2s;
+    
+    @media (hover: hover) {
+      &:hover {
+        background-color: #215cbd;    
+      }
+    }
+    
+    &:active {
+      transform: scale(.96);
+    }
+  }
+  
+  .mail-paperclip {
+    position: absolute;
+    top: 60%;
+    right: -12px;
+    width: 80px;
+    transform: rotate(-15deg);
+    transition-property: transform, opacity;
+    transition-duration: .4s;
+    filter: 
+      drop-shadow(0 1px 2px rgb(9 0 80 / .2))
+      drop-shadow(0 1px 8px rgb(9 0 80 / .1))
+    ;
+    
+    &.front {
+      z-index: 2;
+    }
+    
+    &.back {
+      z-index: -1;
+    }
+    
+    &.hidden {
+      transform: translateX(100%) rotate(15deg);
+      opacity: 0;
+    }
+  }
+  
+  // notes: 
+  // - underline scroll broken in firefox
+  // - can maybe animate corner with @property
+  // - accessibility labels for file input and remove button
+  // - accessibility labels for fields (placeholders are bad)
+  // - focus states
+  // - drag states for file input
+
+  .button {
+    max-width: 320px;
+    display: flex;
+    height: 1.9rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    gap: 0.75rem;
+    color: rgb(65, 63, 63);
+    // background-color: rgba(0, 0, 255, 0.226);
+    cursor: pointer;
+    transition: all .6s ease;
+  }
+  
+  .button svg {
+    height: 24px;
+  }
+  
+  button:hover {
+    transform: scale(1.02);
+  }
