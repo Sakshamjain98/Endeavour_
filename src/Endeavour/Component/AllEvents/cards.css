@@ -1,0 +1,300 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 100wh; */
+}
+
+.event-type {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box-container {
+    /* border: 2px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0rem 2rem;
+}
+
+.box-container .box {
+    background: white;
+    /* background: linear-gradient(rgb(27, 133, 255), rgb(88, 172, 255), rgb(255, 4, 4)); */
+    border-radius: 1rem;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.305);
+    display: flex;
+    /* height: 16rem; */
+    height: fit-content;
+    width: 18rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 1rem 1rem;
+    transform: scale(1);
+    transition: all .5s;
+    /* max-height: 20rem !important; */
+    /* max-width: 16.7%; */
+}
+
+.box-container .box:hover {
+    transform: scale(1.05);
+    transition: all .8s;
+}
+
+.box-container .box img {
+    /* width: 13.25rem; */
+    width: 18rem;
+    height: 13rem;
+    position: relative;
+    margin-top: 0;
+    border-radius: 0.5rem;
+}
+
+
+
+/* .box-container .box  .details .read-more-content {
+    display: none;
+}
+
+.box-container .box  .details .read-more-content-show {
+    display: inline;
+    border: 2px solid black;
+} */
+
+.box-container .box .read-more {
+    color: rgb(7, 32, 131);
+    /* border: 2px solid red; */
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.box-container .box .read-more:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+    margin: 0.5rem;
+}
+
+.btn-1 {
+    background: #2eb2ff;
+    background: linear-gradient(0deg, #0077ff
+    0%, #067aff
+    100%);
+    border: none;
+}
+
+.btn-1:hover {
+    background: #248ed4;
+    background: linear-gradient(0deg, #0162bd
+    0%, #174ea7
+    100%);
+}
+
+/* button {
+    appearance: button;
+    background-color: #1899D6;
+    border: solid transparent;
+    border-radius: 0px;
+    border-width: 0 0 2px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: .5px;
+    line-height: px;
+    margin: 5px 0px;
+    outline: none;
+    overflow: visible;
+    padding: 8px 10px;
+    text-align: center;
+    text-transform: uppercase;
+    touch-action: manipulation;
+    transform: translateZ(0);
+    transition: filter .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+button:after {
+    background-clip: padding-box;
+    background-color: #1CB0F6;
+    border: solid transparent;
+    border-radius: 0px;
+    border-width: 0 0 4px;
+    bottom: -4px;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+button:main,
+button:focus {
+    user-select: auto;
+}
+
+button:hover:not(:disabled) {
+    filter: brightness(1.1);
+}
+
+button:disabled {
+    cursor: auto;
+}
+
+button:active:after {
+    border-width: 0 0 0px;
+}
+
+button:active {
+    padding-bottom: 10px;
+} */
+
+/* button {
+
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    vertical-align: middle;
+    text-decoration: none;
+    background: transparent;
+    padding: 0;
+    font-size: 0.7rem;
+    font-family: inherit;
+}
+
+button.learn-more {
+    width: 12rem;
+    height: 0.8rem;
+}
+
+button.learn-more .circle {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: relative;
+    display: block;
+    margin: 0;
+    width: 2rem;
+    height: 2rem;
+    background:rgb(114, 184, 255);
+    border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    left: 0.3rem;
+    width: 1.125rem;
+    height: 0.125rem;
+    background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+    position: absolute;
+    content: "";
+    top: -0.29rem;
+    right: 0.0625rem;
+    width: 0.625rem;
+    height: 0.625rem;
+    border-top: 0.125rem solid #fff;
+    border-right: 0.125rem solid #fff;
+    transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+    transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0.75rem 0;
+    margin: 0 0 0 1.85rem;
+    color: #43b7ff;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+button:hover .circle {
+    width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+    background: #fff;
+    transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+    color: #fff;
+} */
+
+/* Utility classes */
+
+.p-2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    gap: 1px;
+    padding: 0px 2px;
+    text-align: center;
+}
+
+.main-heading {
+    font-family: serif;
+    font-size: 4.5rem;
+    color: rgb(0, 119, 255);
+    margin-bottom: 0%;
+}
+
+.primary-heading {
+    font-size: 3rem;
+    color: #8e8aff;
+}
+
+.secondary-heading {
+    margin:0.5rem 0.5rem;
+    /* margin-bottom: 0.5rem; */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 5000;
+}

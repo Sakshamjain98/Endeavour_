@@ -59,7 +59,7 @@ const Login = () => {
       {/* <Lottie options={{ animationData: Lotti }} background="transparent"  speed={2}  style={{width: "90%", height: "90%", marginTop:"10px"}}  loop autoplay></Lottie> */}
      <img src={Log} className='md:m-8 md:mt-16 ' alt="" />
       </div>
-      <div className='md:w-[60%]  flex justify-center items-center'>
+      <div className='md:w-[60%] w-[80%] flex justify-center items-center'>
     <div className="mail-wrapper  mt-24 my-12 w-full flex justify-center items-center">
       <form className="mail w-auto flex flex-col justify-center items-center">
       <h1 className='text-center text-3xl font-serif '>Log In</h1>
@@ -72,7 +72,7 @@ const Login = () => {
 
       <button type="submit" className='md:w-[30%] w-[50%] h-8 bg-blue-800 text-white my-2 '>Submit</button>
       <Link to="/register">
-      <button type="submit" className='md:w-[120%]  h-8 bg-blue-800 text-white my-2 '>Don`t have an Account!!</button>
+      <button type="submit" className='md:w-[120%]   h-8 bg-blue-800 text-white my-2 '>Don`t have an Account!!</button>
       </Link>
       <button className="button bg-white text-black border-none font-serif text-md  ">
   <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid" viewBox="0 0 256 262">

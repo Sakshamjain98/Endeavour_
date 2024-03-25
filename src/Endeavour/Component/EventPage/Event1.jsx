@@ -13,7 +13,7 @@ function Event1() {
     <div className="" id="event-1" style={{
       // background: "linear-gradient(to bottom, #c8e1ec,#1a8fbe,#045b95,#7ccce4)",
     }}>
-        <div className="flex bg-white flex-col md:flex-row border  pt-20 justify-center items-center overflow-hidden">
+        <div className="flex bg-white flex-col md:flex-row border min-h-[100vh] pt-20 justify-center items-center overflow-hidden">
           <div className="w-40% flex  justify-center items-center">
             <img className="w-[80%]  pr-0" src={Im} alt="" />
           </div>
@@ -26,7 +26,7 @@ function Event1() {
          
           <div>
           <h1 className="text-center text-black md:text-7xl text-4xl font-serif my-8 mt-4">Additional Information </h1>
-             <div className="md:flex flex-col md:flex-row    md:justify-around my-[10px] gap-0 ">
+             <div className="flex flex-col md:flex-row items-center   justify-center my-[10px] gap-0 ">
           <div className=" md:flex md:justify-between  w-[80%] m-2 p-4 md:w-[40%]" style={{
               background: 'rgba( 255, 255, 255, 0.3 )',
               boxShadow: '0 8px 32px 0 rgba( 31, 38, 135, 0.37 )',
@@ -71,7 +71,7 @@ function Event1() {
             </div>
           </div>
         </div>
-        <div className="md:flex md:justify-around my-[10px] gap-0 " >
+        <div className="flex flex-col md:flex-row items-center   justify-center my-[10px] gap-0 " >
         <div className="md:flex md:justify-between  py-[10px] w-[80%] m-2 md:w-[40%] " style={{
               background: 'rgba( 255, 255, 255, 0.3 )',
               boxShadow: '0 8px 32px 0 rgba( 31, 38, 135, 0.37 )',

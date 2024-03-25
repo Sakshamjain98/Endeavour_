@@ -67,18 +67,18 @@
     --btn: rgba(0,0,0,0.15);
   }
   
-  * {
+  /* * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
+  } */
   
-  body {
+  /* body {
     height: 100vh;
     height: 100svh;
     display: grid;
     place-items: center;
-  }
+  } */
   
   main {
     display: flex;

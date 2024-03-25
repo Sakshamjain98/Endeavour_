@@ -58,9 +58,9 @@ const MailComponent = () => {
       {/* <Lottie options={{ animationData: Lotti }} background="transparent"  speed={2}  style={{width: "90%", height: "90%", marginTop:"10px"}}  loop autoplay></Lottie> */}
      <img src={Log} className='md:m-8 md:mt-16 ' alt="" />
       </div>
-      <div className='md:w-[60%] w-auto flex justify-center items-center'>
-    <div className="mail-wrapper  mt-24 my-12 w-auto flex  justify-center items-center">
-      <form className="mail w-auto">
+      <div className='md:w-[60%] w-[80%] flex justify-center items-center'>
+    <div className="mail-wrapper  mt-24 my-12 w-full  flex  justify-center items-center">
+      <form className="mail w-auto flex flex-col justify-center items-center">
       <h1 className='text-center text-3xl font-serif '>Register Now</h1>
       <input type="text" name="UserName" id="" placeholder='UserName' className='m-2 p-1  border-black block border-b-2 md:w-[90%]'/>
       <input type="email" name="email" id="" placeholder='E-Mail' className='m-2 p-1 border-black block border-b-2 md:w-[90%]'/>

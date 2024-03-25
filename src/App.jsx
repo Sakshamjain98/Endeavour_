@@ -1,4 +1,5 @@
 import './App.css';
+import AllEvent from "./Endeavour/Component/AllEvents/AllEvents.jsx";
 import { createRoot } from 'react-dom';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 // import Page from "./Endeavour/Component/Register/Register.jsx"
@@ -28,6 +29,7 @@ export default function App() {
           <Route path="/Event1" element={<Event1 />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/allevent" element={<AllEvent />} />
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />

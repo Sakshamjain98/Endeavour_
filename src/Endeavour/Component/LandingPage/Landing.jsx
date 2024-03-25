@@ -17,12 +17,12 @@ const About = () => {
         <br />{" "}
         <h1 className="mb-8 ">
 
-        <span style={titleStyle} className="innohacks-text text-[5rem] pt-20 pb-4 mb-3  font-serif">B-Plan
+        <span style={titleStyle} className="innohacks-text text-[3rem] md:text-[5rem] pt-20 pb-4 mb-3  font-serif">B-Plan
 </span>
         </h1>
         <h2>
 
-        <span className="mt-10 leading-6 font-serif  text-wrap" style={{ fontSize: "1.2rem",
+        <span className="mt-10 leading-6 font-serif  text-wrap" style={{ fontSize: "1rem",
     color:"black" }}>Ideas abound when you have the conviction to bring about a change around you.
     The flagship event, B-PLAN, lets you promulgate your ground-breaking ideas.
     Showcase your business skills and let the world see your entrepreneurial side. Gear
@@ -42,7 +42,7 @@ const Myinfo = () => {
     
     >
       <About />
-      <div className="buttom-group flex justify-center items-center gap-4 ml-3 my-4">
+      <div className="buttom-group flex justify-center items-center flex-col md:flex-row gap-4 ml-3 my-4">
        <div>
 
 <Link to="/register">

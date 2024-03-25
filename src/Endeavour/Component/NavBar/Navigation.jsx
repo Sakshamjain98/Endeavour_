@@ -104,7 +104,7 @@ export default function NAVBAR() {
                 </Link>
               </li>
               <li>
-                <Link to="/#event" smooth>
+                <Link to="/allevent" smooth>
                   <span className="links">Events</span>{' '}
                 </Link>
               </li>
