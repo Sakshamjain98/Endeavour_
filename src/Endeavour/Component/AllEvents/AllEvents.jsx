@@ -32,7 +32,7 @@ const Cards = () => {
       imag: a,
       name: "B-Plan",
       content:
-        "Ideas abound when you have the conviction to bring about a change around you. The flagship event, B-PLAN, lets you promulgate your ground-breaking ideas.",
+        "Ideas abound when you have the conviction to bring about a change around you. The flagship event, B-PLAN, lets you promulgate your ground-breaking ideas. ",
       hiddenContent:
         "Showcase your business skills and let the world see your entrepreneurial side. Gear up, buddies! Prepare an abstract and showcase it to be a winner.",
     },
@@ -40,57 +40,57 @@ const Cards = () => {
       imag: b,
       name: "B-Quiz",
       content:
-        "Are you well-versed in the business world? If your answer to this is a “YES”, then you have come to the right place, as this event brings you an opportunity to put on",
+        "Are you well-versed in the business world? If your answer to this is a “YES”, then you have come to the right place, as this event brings you an ",
       hiddenContent:
-        "your thinking caps for a mind-boggling quiz that will consist of technical and business-related questions. The event will be a treat for all the enthusiasts who have an appetite for knowledge and spectacular quizzing skills!",
+        "opportunity to put on your thinking caps for a mind-boggling quiz that will consist of technical and business-related questions. The event will be a treat for all the enthusiasts who have an appetite for knowledge and spectacular quizzing skills!",
     },
     {
       imag: c,
       name: "Market Watch",
       content:
-        " Price is what you pay. Value is what you get.- Warren Buffett Do you have the skills to build a perfect portfolio? Then this event gives you a chance to practice and",
+        " Price is what you pay. Value is what you get.- Warren Buffett Do you have the skills to build a perfect portfolio? Then this event gives you a ",
       hiddenContent:
-        " master your skills. This event is based on investing in the stock market using virtual money",
+        "chance to practice and master your skills. This event is based on investing in the stock market using virtual money",
     },
     {
       imag: d,
       name: "IPL Mania",
       content:
-        "The event will be of two rounds. The first one will be the fantasy round in which the teams have to do online prediction in which they need to create a team on the fantasy app. ",
+        "The event will be of two rounds. The first one will be the fantasy round in which the teams have to do online prediction in which they need to ",
       hiddenContent:
-        "The winning teams of round 1 will be going to the second round i.e. the auction round in which the team has to bid on the players of their choice.",
+        "create a team on the fantasy app. The winning teams of round 1 will be going to the second round i.e. the auction round in which the team has to bid on the players of their choice.",
     },
     {
       imag: e,
       name: "Movie-A-thon",
       content:
-        "Welcome to Movie-A-thon, where creativity, humour, and feasibility collide! Teams will choose a popular movie, delve into its climax and plot, and pitch alternative",
+        "Welcome to Movie-A-thon, where creativity, humour, and feasibility collide! Teams will choose a popular movie, delve into its climax and plot, ",
       hiddenContent:
-        "business ideas inspired by the characters or storyline. Awards await the best pitches in humour, feasibility, and overall creativity. Get ready to unleash your inner entrepreneur and reimagine the world of business through the lens of your favorite films!",
+        "and pitch alternative business ideas inspired by the characters or storyline. Awards await the best pitches in humour, feasibility, and overall creativity. Get ready to unleash your inner entrepreneur and reimagine the world of business through the lens of your favorite films!",
     },
     {
       imag: f,
       name: "Treasure Hunt",
       content:
-        "“Not all treasure silver and gold, mate.” - Jack Sparrow Be a part of our campus treasure hunt, which capacitates you to solve the clues based on various places of",
+        "“Not all treasure silver and gold, mate.” - Jack Sparrow Be a part of our campus treasure hunt, which capacitates you to solve the clues based ",
       hiddenContent:
-        "our campus. We will give participation certificates to all the participants and prizes to the winner.",
+        "on various places of our campus. We will give participation certificates to all the participants and prizes to the winner.",
     },
     {
       imag: g,
       name: "Sprinthacks 2.0",
       content:
-        "Sprinthacks 2.0 is an 24-hour hackathon scheduled to take place in the month of May. This intense event will bring together passionate individuals from diverse ",
+        "Sprinthacks 2.0 is an 24-hour hackathon scheduled to take place in the month of May. This intense event will bring together passionate indivi",
       hiddenContent:
-        "backgrounds to innovate, collaborate, and create impactful solutions. Sprinthacks 2.0 provides a platform for participants to showcase their skills, learn from industry experts, and network with like-minded individuals. This hackathon encourages creativity, collaboration, and innovation to solve real-world challenges",
+        "duals from diverse backgrounds to innovate, collaborate, and create impactful solutions. Sprinthacks 2.0 provides a platform for participants to showcase their skills, learn from industry experts, and network with like-minded individuals. This hackathon encourages creativity, collaboration, and innovation to solve real-world challenges",
     },
     {
       imag: h,
       name: "E-Sports",
       content:
-        "Get ready to experience the adrenaline-fueled battleground action like never before as E-Cell proudly presents BGMI Clash: College Esports Extravaganza! Join us for",
+        "Get ready to experience the adrenaline-fueled battleground action like never before as E-Cell proudly presents BGMI Clash: College Esports ",
       hiddenContent:
-        "an electrifying esports event that will bring together the finest gamers from across the campus to compete in the ultimate showdown of skill, strategy, and teamwork.",
+        "Extravaganza! Join us for an electrifying esports event that will bring together the finest gamers from across the campus to compete in the ultimate showdown of skill, strategy, and teamwork.",
     },
     {
       imag: i,
