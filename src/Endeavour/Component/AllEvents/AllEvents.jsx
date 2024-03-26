@@ -56,43 +56,43 @@ const Cards = () => {
       imag: d,
       name: "IPL Mania",
       content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At expedita corporis quo facere vero incidunt, aliquam rerum sit officiis fugit!",
-      hiddenContent: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi assumenda labore earum temporibus distinctio quos, suscipit repudiandae expedita id perferendis."
+        "The event will be of two rounds. The first one will be the fantasy round in which the teams have to do online prediction in which they need to create a team on the fantasy app. ",
+      hiddenContent: "The winning teams of round 1 will be going to the second round i.e. the auction round in which the team has to bid on the players of their choice."
     },
     {
       imag: e,
       name: "Movie-A-thon",
       content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At expedita corporis quo facere vero incidunt, aliquam rerum sit officiis fugit!",
-      hiddenContent: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi assumenda labore earum temporibus distinctio quos, suscipit repudiandae expedita id perferendis."
+        "Welcome to Movie-A-thon, where creativity, humour, and feasibility collide! Teams will choose a popular movie, delve into its climax and plot, and pitch alternative",
+      hiddenContent: "business ideas inspired by the characters or storyline. Awards await the best pitches in humour, feasibility, and overall creativity. Get ready to unleash your inner entrepreneur and reimagine the world of business through the lens of your favorite films!"
     },
     {
       imag: f,
       name: "Treasure Hunt",
       content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At expedita corporis quo facere vero incidunt, aliquam rerum sit officiis fugit!",
-      hiddenContent: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi assumenda labore earum temporibus distinctio quos, suscipit repudiandae expedita id perferendis."
+      "“Not all treasure silver and gold, mate.” - Jack Sparrow Be a part of our campus treasure hunt, which capacitates you to solve the clues based on various places of",
+      hiddenContent: "our campus. We will give participation certificates to all the participants and prizes to the winner."
     },
     {
       imag: g,
       name: "Sprinthacks 2.0",
       content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At expedita corporis quo facere vero incidunt, aliquam rerum sit officiis fugit!",
-      hiddenContent: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi assumenda labore earum temporibus distinctio quos, suscipit repudiandae expedita id perferendis."
+        "Sprinthacks 2.0 is an 24-hour hackathon scheduled to take place in the month of May. This intense event will bring together passionate individuals from diverse ",
+      hiddenContent: "backgrounds to innovate, collaborate, and create impactful solutions. Sprinthacks 2.0 provides a platform for participants to showcase their skills, learn from industry experts, and network with like-minded individuals. This hackathon encourages creativity, collaboration, and innovation to solve real-world challenges"
     },
     {
       imag: h,
       name: "E-Sports",
       content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At expedita corporis quo facere vero incidunt, aliquam rerum sit officiis fugit!",
-      hiddenContent: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi assumenda labore earum temporibus distinctio quos, suscipit repudiandae expedita id perferendis."
+        "Get ready to experience the adrenaline-fueled battleground action like never before as E-Cell proudly presents BGMI Clash: College Esports Extravaganza! Join us for",
+      hiddenContent: "an electrifying esports event that will bring together the finest gamers from across the campus to compete in the ultimate showdown of skill, strategy, and teamwork."
     },
     {
       imag: i,
       name: "Corporate Dinner",
       content:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. At expedita corporis quo facere vero incidunt, aliquam rerum sit officiis fugit!",
-      hiddenContent: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi assumenda labore earum temporibus distinctio quos, suscipit repudiandae expedita id perferendis."
+        "We are delighted to inform you that the KIET E-Cell will be hosting a Corporate Dinner scheduled for the evening of the first day of ENDEAVOUR’24.",
+      hiddenContent: "The Corporate Dinner promises to be a gathering of esteemed dignitaries of our college - Director In-Charge Dr. Anil Ahlawat sir, Joint Director Dr. Manoj Goel sir, Dean IEC Dr. KLA Khan sir, Dean SW Dr Satish Kumar sir, and the HODs of various departments from our college, as well as Technology Business Incubators (TBIs) from various other institutions. Additionally, representatives from Entrepreneurial and Development cells of different colleges will also be in attendance."
     },
 
   ];
