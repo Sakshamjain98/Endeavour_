@@ -46,7 +46,7 @@ export default function App() {
         className="mySwiper"
       >
         <SwiperSlide>
-            <Link to="/Event1#event-1">
+            <Link to="/Event0#event-1">
             <img className="change-button "  src={a}  alt="" />
             </Link>
         </SwiperSlide>
@@ -56,37 +56,37 @@ export default function App() {
             </Link>
         </SwiperSlide>
         <SwiperSlide>
-            <Link to="/Event1#event-1">
+            <Link to="/Event2#event-1">
             <img className="change-button" src={c}  alt="" />
             </Link>
         </SwiperSlide>
         <SwiperSlide>
-            <Link to="/Event1#event-1">
+            <Link to="/Event3#event-1">
             <img className="change-button" src={d}  alt="" />
             </Link>
         </SwiperSlide>
         <SwiperSlide>
-            <Link to="/Event1#event-1">
+            <Link to="/Event4#event-1">
             <img className="change-button" src={e}  alt="" />
             </Link>
         </SwiperSlide>
         <SwiperSlide>
-            <Link to="/Event1#event-1">
+            <Link to="/Event5#event-1">
             <img className="change-button" src={f}  alt="" />
             </Link>
         </SwiperSlide>
         <SwiperSlide>
-            <Link to="/Event1#event-1">
+            <Link to="/Event6#event-1">
             <img className="change-button" src={g}  alt="" />
             </Link>
         </SwiperSlide>
         <SwiperSlide>
-            <Link to="/Event1#event-1">
+            <Link to="/Event7#event-1">
             <img className="change-button" src={h}  alt="" />
             </Link>
         </SwiperSlide>
         <SwiperSlide>
-            <Link to="/Event1#event-1">
+            <Link to="/Event8#event-1">
             <img className="change-button" src={i}  alt="" />
             </Link>
         </SwiperSlide>

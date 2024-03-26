@@ -6,7 +6,7 @@ function App() {
     return (
         <div className="App">
             <ParticleBackground />
-            {/* Your other components and content */}
+         
         </div>
     );
 }

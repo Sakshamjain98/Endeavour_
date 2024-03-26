@@ -1,152 +1,147 @@
 .nav_bar {
-    list-style-type: none;
-    height: 50px;
-    font-size: 1.8rem;
-    font-family: repo-medium;
-    position: fixed;
-    width: 100vw;
-    z-index: 10;
-    // transition: height 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-      // background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-    background-color: #000000bf;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    // margin: 0.1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.441); // Add box-shadow property
-    padding-top: 10px;
-    overflow-y: hidden;
-    overflow-x: hidden;
+  list-style-type: none;
+  height: 50px;
+  font-size: 1.8rem;
+  font-family: repo-medium;
+  position: fixed;
+  width: 100vw;
+  z-index: 10;
+  // transition: height 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  // background-color 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  background-color: #000000bf;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  // margin: 0.1rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.441); // Add box-shadow property
+  padding-top: 10px;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
-.logo-div img{
+.logo-div img {
   width: 10rem;
 }
-    
-  
-    @media (min-width: 1000px) {
-        .nav_bar {
-          height: 72px;
-          box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.16);
-          overflow-x:hidden;
-        }
-      // hei?ght: 60px;
-    }
-  
-  
-    @media (min-width: 1000px) {
-      .nav_bar-offset-crossed {
-        // background-color: #6A63B7;
-        background-color: #1a1a1b;
-        height: 72px;
-        box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.16);
-      }
-    }
-  
-    .nav-logo img{
-      cursor: pointer;
-      width: 5000px;
-      
-    }
-  
-  .nav_bar .logo-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    margin-right: 35%;
-    padding-right: 0%;
-    height: 100px;
+
+@media (min-width: 1000px) {
+  .nav_bar {
+    height: 72px;
+    box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.16);
+    overflow-x: hidden;
   }
-   .nav_bar .s-open,
-   .nav_bar .s-close {
-      display: none;
-    }
-    .nav_bar .nav-inner {
-      width: 30%;
-    }
-    .nav_bar  ul {
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: baseline;
-      height: 100%;
-      align-items: center;
-    }
-    nav ul li {
-      margin-left: 10px;
-      font-size: 1.2rem;
-      position: relative;
-      list-style: none;
-      text-decoration: none;
-    }
-    .links::after{
-      content: "";
-      height: 2px;
-      width: 0%;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      background-color: white;
-      border-radius: 2px;
-      transition: all 200ms ease-in;
-    }
-    .links:hover{
-      // background: linear-gradient(-45deg, red 0%, blue 100% );
-      // background-clip: text;
-      // -webkit-background-clip: text;
-      // -webkit-text-fill-color: transparent;
-      color: white;
-    }
-    .links:hover::after{
-      width: 100%;
-    }
-    .nav_bar .links {
-      color: rgb(231, 228, 228);
-      transition: 0.5s;
-      font-weight: 300;
-      letter-spacing: 1.3px;
-  
-      &:hover {
-        opacity: 0.8;
-      }
-    }
-  
-    @media (max-width: 1000px) {
-      .nav_bar .ease {
-        background: #484848;
-        height: 75%;
-        opacity: 0.2;
-        pointer-events: none;
-      }
-     .nav_bar ul {
-        flex-direction: column;
-        padding: 30px 20;
-        background-color: black;
-        border-bottom: 2px solid white;
-      }
-      .nav_bar .s-open {
-        display: inline;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-        z-index: -1;
-      }
-      .nav_bar .s-close {
-        display: block;
-        position: absolute;
-        right: 10px;
-        top: 10px;
-      }
-      .nav_bar .logo-div{
-        display: flex; /* Change display property to flex */
+  // hei?ght: 60px;
+}
+
+@media (min-width: 1000px) {
+  .nav_bar-offset-crossed {
+    // background-color: #6A63B7;
+    background-color: #1a1a1b;
+    height: 72px;
+    box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.16);
+  }
+}
+
+.nav-logo img {
+  cursor: pointer;
+  width: 5000px;
+}
+
+.nav_bar .logo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  margin-right: 35%;
+  padding-right: 0%;
+  height: 100px;
+}
+.nav_bar .s-open,
+.nav_bar .s-close {
+  display: none;
+}
+.nav_bar .nav-inner {
+  width: 30%;
+}
+.nav_bar ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 100%;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 10px;
+  font-size: 1.2rem;
+  position: relative;
+  list-style: none;
+  text-decoration: none;
+}
+.links::after {
+  content: "";
+  height: 2px;
+  width: 0%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 200ms ease-in;
+}
+.links:hover {
+  // background: linear-gradient(-45deg, red 0%, blue 100% );
+  // background-clip: text;
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+  color: white;
+}
+.links:hover::after {
+  width: 100%;
+}
+.nav_bar .links {
+  color: rgb(231, 228, 228);
+  transition: 0.5s;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+@media (max-width: 1000px) {
+  .nav_bar .ease {
+    background: #484848;
+    height: 75%;
+    opacity: 0.2;
+    pointer-events: none;
+  }
+  .nav_bar ul {
+    flex-direction: column;
+    padding: 30px 20;
+    background-color: black;
+    border-bottom: 2px solid white;
+  }
+  .nav_bar .s-open {
+    display: inline;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: -1;
+  }
+  .nav_bar .s-close {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+  .nav_bar .logo-div {
+    display: flex; /* Change display property to flex */
     justify-content: center;
     align-items: center;
     width: 150px;
     margin-right: 55%;
     padding-right: 0%;
     height: 80px;
-      }
-    }
-  
-  
+  }
+}

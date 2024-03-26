@@ -1,8 +1,9 @@
 import './App.css';
 import AllEvent from "./Endeavour/Component/AllEvents/AllEvents.jsx";
 import { createRoot } from 'react-dom';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-// import Page from "./Endeavour/Component/Register/Register.jsx"
+import Pre from "./Endeavour/Component/preloader/PreLoader.jsx"
 import Nav from "./Endeavour/Component/NavBar/Navigation.jsx";
 import Footer from "./Endeavour/Component/Footer/Foot";
 import About from "./Endeavour/Component/About/About";
@@ -20,13 +21,24 @@ import Event5 from "./Endeavour/Component/EventPage/Event6.jsx";
 import Event6 from "./Endeavour/Component/EventPage/Event7.jsx";
 import Event7 from "./Endeavour/Component/EventPage/Event8.jsx";
 import Event8 from "./Endeavour/Component/EventPage/Event9.jsx";
-// import Event0 from "./Endeavour/Component/EventPage/Event1.jsx";
 import Register from "./Endeavour/Component/Login/Register.jsx"
 import Login from "./Endeavour/Component/Login/Login.jsx"
 export default function App() {
+  const [isLoading, setIsLoading] = useState(true);
+  
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false); // Hide the preloader after 5 seconds
+    }, 4000);
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
     <div className='overflow-hidden'>
       <Router>
+        {isLoading && <Pre />}
+        {!isLoading &&
+        <>
         <Nav />
         <Cursor />
         <Routes>
@@ -50,6 +62,8 @@ export default function App() {
           <Route path="*" element={<Error />} />
         </Routes>
         <Footer />
+        </>
+        }
       </Router>
     </div>
   );
