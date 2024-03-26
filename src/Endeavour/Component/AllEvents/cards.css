@@ -14,15 +14,18 @@
 
 }
 
-.box-container {
+/* .box-container { */
     /* border: 2px solid red; */
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0rem 2rem;
-}
+    .box-container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center align horizontally */
+        gap: 1rem; /* Add gap between cards */
+        /* padding: 0rem; */
+    }
+    
+
 
 .box-container .box {
     background: white;

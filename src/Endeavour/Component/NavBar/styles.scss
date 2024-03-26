@@ -139,7 +139,13 @@
         top: 10px;
       }
       .nav_bar .logo-div{
-        display: none;
+        display: flex; /* Change display property to flex */
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    margin-right: 55%;
+    padding-right: 0%;
+    height: 80px;
       }
     }
   

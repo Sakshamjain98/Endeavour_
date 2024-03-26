@@ -24,7 +24,8 @@ const Wrapper = styled.div`
     transition: top 1s;
     .nav-content {
       height: 35%;
-      background-color: rgba(50, 13, 136);
+      background-color: black;
+      padding: 20px; /* Add padding */
     }
   }
 `;
@@ -66,8 +67,7 @@ export default function NAVBAR() {
      
       <div className='logo-div w-40 '>
        <Link to="/" smooth>
-        <img src={logo} className="nav-logo" style={{
-        }} ></img>
+        <img src={logo} className="nav-logo"></img>
        </Link>
       </div>
 

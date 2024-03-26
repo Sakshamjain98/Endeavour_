@@ -1,5 +1,5 @@
 import Landing from "../LandingPage/Landing"
-import Im from "../../../assets/Event.jpg";
+import Im from "../../../assets/EVENTCARD BPLAN.jpg";
 import location from "../../../assets/location.gif"
 import calendar from "../../../assets/calendar.gif"
 import purse from "../../../assets/purse.gif"
@@ -13,12 +13,15 @@ function Event1() {
     <div className="" id="event-1" style={{
       // background: "linear-gradient(to bottom, #c8e1ec,#1a8fbe,#045b95,#7ccce4)",
     }}>
-        <div className="flex bg-white flex-col md:flex-row border min-h-[100vh] pt-20 justify-center items-center overflow-hidden">
-          <div className="w-40% flex  justify-center items-center">
+        <div className="flex bg-white flex-col md:flex-row border min-h-[100vh] pt-10 justify-center items-center overflow-hidden">
+          <div className="w-40% md:w-[50%] flex mt-10  justify-center items-center">
             <img className="w-[80%]  pr-0" src={Im} alt="" />
           </div>
             <div className="w-[60%]">
-          <Landing></Landing>
+          <Landing name="B-Plan" desc="Ideas abound when you have the conviction to bring about a change around you.
+The flagship event, B-PLAN, lets you promulgate your ground-breaking ideas.
+Showcase your business skills and let the world see your entrepreneurial side. Gear
+up, buddies! Prepare an abstract and showcase it to be a winner."></Landing>
             </div>
         </div>
         <div className="flex justify-center mt-3 flex-col "
@@ -39,9 +42,9 @@ function Event1() {
               <img
                 src={location}
                 alt="location"
-                className=" w-[100px] h-[120px]"
+                className=" w-[100px] h-[100px]"
               />
-              <div className=" mt-[8px] font-serif sm:text-[23px] text-[16px] text-center text-black">
+              <div className=" mt-[8px] font-serif sm:text-[18px] text-[16px] text-center text-black">
                 <span className="font-extrabold text-black">Venue</span> <br />
                  KIET <br />
                 Group of Institution, Ghaziabad
@@ -62,7 +65,7 @@ function Event1() {
                 alt="location"
                 className=" w-[80px] h-[80px] mt-[20px] mx-[20px]"
               />
-              <div className=" mt-[8px] font-serif sm:text-[23px] text-[16px] text-center text-black">
+              <div className=" mt-[8px] font-serif sm:text-[18px] text-[16px] text-center text-black">
                 <span className="font-extrabold text-black">Number Of members in a team</span> <br />
                 1–4 members <br />
                 The event consists of two rounds
@@ -86,7 +89,7 @@ function Event1() {
                 alt="location"
                 className=" w-[100px] h-[100px] mt-[20px] "
               />
-              <div className=" mt-[8px] font-serif sm:text-[23px] text-[16px] text-center text-black">
+              <div className=" mt-[8px] font-serif sm:text-[20px] text-[16px] text-center text-black">
                 <span className="font-extrabold text-black">Date</span> <br />
                 4th-5th May 2024 <br />
                 24hr Hackathon
@@ -105,7 +108,7 @@ function Event1() {
               <img
                 src={purse}
                 alt="location"
-                className=" w-[100px] h-[100px] mt-[20px] mx-[20px]"
+                className=" w-[100px] h-[80px] mt-[20px] mx-[20px]"
               />
               <div className=" mt-[8px] font-serif sm:text-[23px] text-[16px] text-center text-black">
                 <span className="font-extrabold text-black">Fees</span> <br />

@@ -1,5 +1,5 @@
 import Landing from "../LandingPage/Landing"
-import Im from "../../../assets/EVENTCARD  B-Quiz.jpg";
+import Im from "../../../assets/EVENTCARD  Movie-A-thon.jpg";
 import location from "../../../assets/location.gif"
 import calendar from "../../../assets/calendar.gif"
 import purse from "../../../assets/purse.gif"
@@ -14,15 +14,16 @@ function Event1() {
       // background: "linear-gradient(to bottom, #c8e1ec,#1a8fbe,#045b95,#7ccce4)",
     }}>
         <div className="flex bg-white flex-col md:flex-row border min-h-[100vh] pt-10 justify-center items-center overflow-hidden">
-          <div className="w-40% md:w-[50%] flex mt-10  justify-center items-center">
+          <div className="w-40% md:w-[50%] flex mt-10 justify-center items-center">
             <img className="w-[80%]  pr-0" src={Im} alt="" />
           </div>
             <div className="w-[60%]">
-          <Landing name="B-Quiz" desc="Are you well-versed in the business world? If your answer to this is a “YES”, then
-you have come to the right place, as this event brings you an opportunity to put on
-your thinking caps for a mind-boggling quiz that will consist of technical and
-business-related questions. The event will be a treat for all the enthusiasts who have
-an appetite for knowledge and spectacular quizzing skills!"></Landing>
+          <Landing name="Movie-A-thon" desc="Welcome to Movie-A-thon, where creativity, humour, and feasibility collide! Teams
+will choose a popular movie, delve into its climax and plot, and pitch alternative
+business ideas inspired by the characters or storyline. Awards await the best pitches
+in humour, feasibility, and overall creativity. Get ready to unleash your inner
+entrepreneur and reimagine the world of business through the lens of your favorite
+films!"></Landing>
             </div>
         </div>
         <div className="flex justify-center mt-3 flex-col "
@@ -68,8 +69,8 @@ an appetite for knowledge and spectacular quizzing skills!"></Landing>
               />
               <div className=" mt-[8px] font-serif sm:text-[18px] text-[16px] text-center text-black">
                 <span className="font-extrabold text-black">Number Of members in a team</span> <br />
-                1–2 members <br />
-                The event consists of two rounds
+                1–4 members <br />
+                The event consists of 2 rounds
 
               </div>
             </div>
@@ -93,7 +94,7 @@ an appetite for knowledge and spectacular quizzing skills!"></Landing>
               <div className=" mt-[8px] font-serif sm:text-[20px] text-[16px] text-center text-black">
                 <span className="font-extrabold text-black">Date</span> <br />
                 4th-5th May 2024 <br />
-                24hr Hackathon
+                The event will be of 48 hour
               </div>
             </div>
           </div>
@@ -171,7 +172,7 @@ an appetite for knowledge and spectacular quizzing skills!"></Landing>
           <li>● Any kind of cheating will lead to direct disqualification.</li>
           <li>● Team E-Cell holds the right to remove any participant from the event.</li>
           <li>● Partial answers will be considered as wrong.</li>
-          <li>● The participants should answer in the given time limit.</li>
+          <li>● The participants should answer within the given time limit.</li>
           <li>● You can’t withdraw once you have registered.</li>
           <li>● In case of a tie in the second round, there will be a tie-breaker round.</li>
         </ul>
@@ -179,41 +180,49 @@ an appetite for knowledge and spectacular quizzing skills!"></Landing>
           <div className="m-8 ">
           <h3 className="text-3xl font-serif mb-4">Benefits</h3>
         <ul className="font-mono text-md ">
-          <li>● You will get a chance to check your knowledge about various business/corporate domains.</li>
-          <li>● Enhance the quizzing and analytical ability.</li>
-          {/* <li>● Developing entrepreneurial skills.</li> */}
+          <li>● Enhances Pitching Skills: Participating in a movie pitch battle hones your
+ability to present ideas succinctly and persuasively.</li>
+          <li>● Industry Exposure: Offers valuable exposure to industry professionals,
+potentially opening doors for collaboration and opportunities.</li>
+<li>● Networking Opportunities: Facilitates connections with fellow filmmakers,
+producers, and decision-makers, fostering a supportive professional network.</li>
           </ul>
           </div>
           </div>
           <div className="flex flex-col justify-center items-center">
             <div className="m-8  ">
-            <h3 className="text-2xl font-serif mb-4 ">ROUND 1: Questionnaire round</h3>
+            <h3 className="text-2xl font-serif mb-4 ">ROUND 1</h3>
             <ul className="font-mono text-md ">
-          <li>● This is a logo identification round in which the logo of any two companies will
-be combined to form a single logo and the teams have to identify the logo.</li>
-          <li>● There will be 30 logos that will be shown via presentation, and the participants
-with the most correct answers will be qualifying for the next round.
+          <li>● Participants will receive summaries of screenplays or plots of well-known films
+in the form of 5 case studies with predetermined questions.
 </li>
-           <li>● The top 8 teams will continue to the next round.
-</li> 
+          <li>● Teams answer the questions within a time limit of 30 minutes.</li>
+          <li>● The top 8 teams with the most number of correct answers progress to the
+next round.</li>
+         
           </ul>
             </div>
-            <div className="m-8 ">
-            <h3 className="text-2xl font-serif mb-4 ">ROUND 2: Presentation</h3>
+            <div className="m-8  ">
+            <h3 className="text-2xl font-serif mb-4 ">ROUND 2</h3>
             <ul className="font-mono text-md ">
-          <li>This round will be a buzzer round.</li>
-          <li>● It will be an audio quiz based on famous advertisements of products. The
-participants have to press the buzzer as soon as they get the answer.
+          <li>● Entrepreneurial Kickoff: Teams initiate their business journey by forming
+groups and selecting popular movies like 3 Idiots or Tarzan (The Wonder Car)
+for their pitches.
 </li>
-           <li>● There will be 15 questions in this round. Each question will carry 5 points for
-the correct answer, and the team with maximum points will be the winner. If
-the answer is wrong, it will lead to a deduction of two points.
-
-</li> 
-<li>● Answering incorrectly would lead to a deduction of 2 points.</li>
-<li>● The team with the highest score will be declared the winner.</li>
+<li>● Cinematic Analysis: Teams dissect the chosen movie`s climax and plot,
+extracting crucial elements to inspire and shape their innovative business
+concepts.
+</li>
+<li>● Movie-Inspired Business Plans: The entrepreneurial plan revolves around
+integrating the identified plot and climax elements, providing a unique and
+creative foundation for their pitches.
+</li>
+<li>● You have to name that startup with a tagline.
+</li>
+         
           </ul>
             </div>
+            
           </div>
        
         </div>

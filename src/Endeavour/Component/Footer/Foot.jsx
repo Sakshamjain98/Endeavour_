@@ -28,7 +28,7 @@ const Footer = () => {
       <div className='main-footer overflow-x-hidden'>
         <div className="Register_a">
           <button className="register-button">
-<Link to="/register" className='register-link'>
+<Link to="/register#hello" className='register-link'>
             <a  className='register-link' href=''>
               <span>Register Now</span>
             </a>
@@ -75,11 +75,11 @@ const Footer = () => {
         </a>
         </div>
       </div> */}
-      <div className=" flex flex-row overflow-x-hidden">
-        <div className=" w-[100%] ml-10">
+      <div className=" flex md:flex-row flex-col ">
+        <div className=" items-center flex md:w-[120%] w-[100%] justify-center md:justify-normal">
           <img src={logo2} className="" alt="" />
         </div>
-        <div className="w-[40%]">
+        <div className="md:w-[50%] w-[100%] flex items-center justify-center md:justify-normal">
           <img src={logo1} alt="" />
         </div>
       </div>

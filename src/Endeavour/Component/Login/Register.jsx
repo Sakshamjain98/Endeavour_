@@ -50,7 +50,7 @@ const MailComponent = () => {
   // };
 
   return (
-    <div className='flex flex-col md:flex-row justify-center items-center'>
+    <div className='hello flex flex-col md:flex-row justify-center items-center'>
        <div className="md:w-[40%] max-w-96 flex justify-center items-center md:m-4 mt-16"
             style={{
                 

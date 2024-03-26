@@ -3,7 +3,10 @@ import "./styles.css";
 import {HashLink as Link} from 'react-router-hash-link';
 
 
-const About = () => {
+import PropTypes from 'prop-types';
+
+ 
+const About = ({Name, Desc}) => {
   const titleStyle = {
     background: "linear-gradient(to right, blue, #064d81)",
     WebkitBackgroundClip: "text",
@@ -17,16 +20,13 @@ const About = () => {
         <br />{" "}
         <h1 className="mb-8 ">
 
-        <span style={titleStyle} className="innohacks-text text-[3rem] md:text-[5rem] pt-20 pb-4 mb-3  font-serif">B-Plan
+        <span style={titleStyle} className="innohacks-text text-[3rem] md:text-[4rem] pt-20 pb-4 mb-3 leading-10  font-serif">{Name}
 </span>
         </h1>
         <h2>
 
         <span className="mt-10 leading-6 font-serif  text-wrap" style={{ fontSize: "1rem",
-    color:"black" }}>Ideas abound when you have the conviction to bring about a change around you.
-    The flagship event, B-PLAN, lets you promulgate your ground-breaking ideas.
-    Showcase your business skills and let the world see your entrepreneurial side. Gear
-    up, buddies! Prepare an abstract and showcase it to be a winner.</span>
+    color:"black" }}>{Desc}</span>
     </h2>
       </h2>
       {/* <h6 className="mt-10" style={{ fontSize: "1.9rem",
@@ -34,14 +34,25 @@ const About = () => {
       <MytypedComponent /> */}  
     </div>
   );
+  // Component code here
+};
+About.propTypes = {
+  Name: PropTypes.string.isRequired,
+  Desc: PropTypes.string.isRequired,
 };
 
-const Myinfo = () => {
+
+  
+
+
+// import PropTypes from 'prop-types';
+
+const Myinfo = ({name, desc}) => {
   return (
     <div className="Myinfo  text-xl  bg-white"
     
     >
-      <About />
+      <About Name={name} Desc={desc} />
       <div className="buttom-group flex justify-center items-center flex-col md:flex-row gap-4 ml-3 my-4">
        <div>
 
@@ -82,5 +93,8 @@ const Myinfo = () => {
     
   );
 };
-
+Myinfo.propTypes = {
+  name: PropTypes.string.isRequired,
+  desc: PropTypes.string.isRequired,
+};
 export default  Myinfo ;

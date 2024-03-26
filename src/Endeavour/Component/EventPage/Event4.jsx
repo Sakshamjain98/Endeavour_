@@ -1,5 +1,5 @@
 import Landing from "../LandingPage/Landing"
-import Im from "../../../assets/EVENTCARD  B-Quiz.jpg";
+import Im from "../../../assets/EVENTCARD  IPL Mania.jpg";
 import location from "../../../assets/location.gif"
 import calendar from "../../../assets/calendar.gif"
 import purse from "../../../assets/purse.gif"
@@ -18,11 +18,10 @@ function Event1() {
             <img className="w-[80%]  pr-0" src={Im} alt="" />
           </div>
             <div className="w-[60%]">
-          <Landing name="B-Quiz" desc="Are you well-versed in the business world? If your answer to this is a “YES”, then
-you have come to the right place, as this event brings you an opportunity to put on
-your thinking caps for a mind-boggling quiz that will consist of technical and
-business-related questions. The event will be a treat for all the enthusiasts who have
-an appetite for knowledge and spectacular quizzing skills!"></Landing>
+          <Landing name="IPL Mania" desc="The event will be of two rounds. The first one will be the fantasy round in which the
+teams have to do online prediction in which they need to create a team on the
+fantasy app. The winning teams of round 1 will be going to the second round i.e. the
+auction round in which the team has to bid on the players of their choice."></Landing>
             </div>
         </div>
         <div className="flex justify-center mt-3 flex-col "
@@ -68,8 +67,8 @@ an appetite for knowledge and spectacular quizzing skills!"></Landing>
               />
               <div className=" mt-[8px] font-serif sm:text-[18px] text-[16px] text-center text-black">
                 <span className="font-extrabold text-black">Number Of members in a team</span> <br />
-                1–2 members <br />
-                The event consists of two rounds
+                1–4 members <br />
+                The event consists of 2 rounds
 
               </div>
             </div>
@@ -93,7 +92,7 @@ an appetite for knowledge and spectacular quizzing skills!"></Landing>
               <div className=" mt-[8px] font-serif sm:text-[20px] text-[16px] text-center text-black">
                 <span className="font-extrabold text-black">Date</span> <br />
                 4th-5th May 2024 <br />
-                24hr Hackathon
+                The event will be of 48 hour
               </div>
             </div>
           </div>
@@ -168,52 +167,52 @@ an appetite for knowledge and spectacular quizzing skills!"></Landing>
           <div className="m-8 ">
         <h3 className="text-3xl font-serif mb-4">Rules</h3>
         <ul className="font-mono text-md ">
-          <li>● Any kind of cheating will lead to direct disqualification.</li>
-          <li>● Team E-Cell holds the right to remove any participant from the event.</li>
-          <li>● Partial answers will be considered as wrong.</li>
-          <li>● The participants should answer in the given time limit.</li>
-          <li>● You can’t withdraw once you have registered.</li>
-          <li>● In case of a tie in the second round, there will be a tie-breaker round.</li>
+          <li>● Only one team is allowed per player in round 1.</li>
+          <li>● If a user is found using more than one team, he’ll be disqualified.</li>
+          <li>● The teams have to choose not more than 11 players in rounds 1 and 2.</li>
+          <li>● The selected players will not be changed after the player is sold to the respective team.</li>
         </ul>
           </div>
           <div className="m-8 ">
           <h3 className="text-3xl font-serif mb-4">Benefits</h3>
         <ul className="font-mono text-md ">
-          <li>● You will get a chance to check your knowledge about various business/corporate domains.</li>
-          <li>● Enhance the quizzing and analytical ability.</li>
-          {/* <li>● Developing entrepreneurial skills.</li> */}
+          <li>● Helps enhance management skills and planning efficiency.</li>
+          <li>● To increase decision-making and learning ability.</li>
           </ul>
           </div>
           </div>
           <div className="flex flex-col justify-center items-center">
             <div className="m-8  ">
-            <h3 className="text-2xl font-serif mb-4 ">ROUND 1: Questionnaire round</h3>
+            <h3 className="text-2xl font-serif mb-4 ">ROUND 1 (Fantasy)</h3>
             <ul className="font-mono text-md ">
-          <li>● This is a logo identification round in which the logo of any two companies will
-be combined to form a single logo and the teams have to identify the logo.</li>
-          <li>● There will be 30 logos that will be shown via presentation, and the participants
-with the most correct answers will be qualifying for the next round.
+          <li>Each participant will be required to make an account on the IPL app, after which they
+will be given a Google form where they’ll be asked to fill in their Name and their IPL
+team name (app username), after filling the Google form, the participants will be
+given the league link to join the pl fantasy league with the name “KIET E-Cell”, where
+they will join.
 </li>
-           <li>● The top 8 teams will continue to the next round.
-</li> 
+          <li>This round will be a one-day event where the players would be required to make a
+team based on the match-day players, the teams must have at least 1 wicket-keeper,
+3 batters, 2 All-rounders, and 3 bowlers The participants have to make the team 30
+minutes prior to starting of the match.</li>
+         
           </ul>
             </div>
-            <div className="m-8 ">
-            <h3 className="text-2xl font-serif mb-4 ">ROUND 2: Presentation</h3>
+            <div className="m-8  ">
+            <h3 className="text-2xl font-serif mb-4 ">ROUND 2 (BIDDING)</h3>
             <ul className="font-mono text-md ">
-          <li>This round will be a buzzer round.</li>
-          <li>● It will be an audio quiz based on famous advertisements of products. The
-participants have to press the buzzer as soon as they get the answer.
+          <li>The winning teams of round 1 will be given 100 crores (Virtual money) and will be
+given the chance to choose the top 30 Marquee players before the auction i.e. via
+the draft and after choosing the marquee players teams will be shown the pictures of
+the players via presentation, and they have to bid on the players with the other teams. The team will be shared with a sheet in which the present form of the players
+through stats and ratings will be given and on that basis they can bid on the player.
+At last, the team with the highest rating and well-balanced in all aspects will be the
+winner.
 </li>
-           <li>● There will be 15 questions in this round. Each question will carry 5 points for
-the correct answer, and the team with maximum points will be the winner. If
-the answer is wrong, it will lead to a deduction of two points.
-
-</li> 
-<li>● Answering incorrectly would lead to a deduction of 2 points.</li>
-<li>● The team with the highest score will be declared the winner.</li>
+         
           </ul>
             </div>
+            
           </div>
        
         </div>

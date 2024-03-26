@@ -1,7 +1,7 @@
 
 
 // import Im from "../../../assets/White-paper-texture-for-Projects.jpg"
-import PastWinner from "../PastWinner/PastWinner";
+import PastWinner from "../PastWinner/NewStyle.jsx";
 function About() {
     return (
         <div id="about" className="flex flex-col md:flex-row p-4 mb-4 justify-center items-start overflow-hidden "
@@ -15,7 +15,7 @@ function About() {
                 <h2 className="font-bold text-3xl md:text-5xl mb-8 mt-8 font-serif">When & Where</h2>
                 <p className="font-sans text-sm md:text-base ">At KIET Group Of Institution, Ghaziabad <br />4 May-5May</p>
             </div>
-            <div className="w-full md:w-[50%] ">
+            <div className="w-full md:w-[50%]  ">
                 {/* <h2 className="font-bold text-3xl md:text-5xl mb-2">When</h2>
                 <h3 className="font-serif text-sm md:text-base">SATURDAY TO SUNDAY</h3>
                 <h3 className="font-serif text-sm md:text-base mb-8">2ND TO 3RD SEPTEMBER 2023</h3>

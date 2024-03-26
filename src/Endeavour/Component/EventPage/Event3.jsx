@@ -1,5 +1,5 @@
 import Landing from "../LandingPage/Landing"
-import Im from "../../../assets/EVENTCARD  B-Quiz.jpg";
+import Im from "../../../assets/EVENTCARD Market Watch.jpg";
 import location from "../../../assets/location.gif"
 import calendar from "../../../assets/calendar.gif"
 import purse from "../../../assets/purse.gif"
@@ -18,11 +18,10 @@ function Event1() {
             <img className="w-[80%]  pr-0" src={Im} alt="" />
           </div>
             <div className="w-[60%]">
-          <Landing name="B-Quiz" desc="Are you well-versed in the business world? If your answer to this is a “YES”, then
-you have come to the right place, as this event brings you an opportunity to put on
-your thinking caps for a mind-boggling quiz that will consist of technical and
-business-related questions. The event will be a treat for all the enthusiasts who have
-an appetite for knowledge and spectacular quizzing skills!"></Landing>
+          <Landing name="Market Watch" desc="Price is what you pay. Value is what you get.- Warren Buffett Do you have the skills
+to build a perfect portfolio? Then this event gives you a chance to practice and
+master your skills. This event is based on investing in the stock market using virtual
+money"></Landing>
             </div>
         </div>
         <div className="flex justify-center mt-3 flex-col "
@@ -69,7 +68,7 @@ an appetite for knowledge and spectacular quizzing skills!"></Landing>
               <div className=" mt-[8px] font-serif sm:text-[18px] text-[16px] text-center text-black">
                 <span className="font-extrabold text-black">Number Of members in a team</span> <br />
                 1–2 members <br />
-                The event consists of two rounds
+                The event consists of only 1 rounds
 
               </div>
             </div>
@@ -93,7 +92,7 @@ an appetite for knowledge and spectacular quizzing skills!"></Landing>
               <div className=" mt-[8px] font-serif sm:text-[20px] text-[16px] text-center text-black">
                 <span className="font-extrabold text-black">Date</span> <br />
                 4th-5th May 2024 <br />
-                24hr Hackathon
+                The event will be of 1.5 hour
               </div>
             </div>
           </div>
@@ -169,51 +168,37 @@ an appetite for knowledge and spectacular quizzing skills!"></Landing>
         <h3 className="text-3xl font-serif mb-4">Rules</h3>
         <ul className="font-mono text-md ">
           <li>● Any kind of cheating will lead to direct disqualification.</li>
-          <li>● Team E-Cell holds the right to remove any participant from the event.</li>
-          <li>● Partial answers will be considered as wrong.</li>
-          <li>● The participants should answer in the given time limit.</li>
-          <li>● You can’t withdraw once you have registered.</li>
-          <li>● In case of a tie in the second round, there will be a tie-breaker round.</li>
+          <li>● The final decisions of the judges will not be questionable.</li>
+          <li>● The E-Cell team has the right to disqualify any participant at any point.</li>
+          
         </ul>
           </div>
           <div className="m-8 ">
           <h3 className="text-3xl font-serif mb-4">Benefits</h3>
         <ul className="font-mono text-md ">
-          <li>● You will get a chance to check your knowledge about various business/corporate domains.</li>
-          <li>● Enhance the quizzing and analytical ability.</li>
-          {/* <li>● Developing entrepreneurial skills.</li> */}
+          <li>● To enhance knowledge of the stock market.</li>
+          <li>● To develop investing and trading skills.</li>
+          <li>● To increase critical thinking and analytical capacity</li>
           </ul>
           </div>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div className="flex flex-col justify-center ">
             <div className="m-8  ">
-            <h3 className="text-2xl font-serif mb-4 ">ROUND 1: Questionnaire round</h3>
+            <h3 className="text-2xl font-serif mb-4 ">ROUND</h3>
             <ul className="font-mono text-md ">
-          <li>● This is a logo identification round in which the logo of any two companies will
-be combined to form a single logo and the teams have to identify the logo.</li>
-          <li>● There will be 30 logos that will be shown via presentation, and the participants
-with the most correct answers will be qualifying for the next round.
-</li>
-           <li>● The top 8 teams will continue to the next round.
+          <li>● Teams will be given Rs.10,000 as virtual money.</li>
+          <li>● They will buy/sell shares of 5 companies selected for the event.</li>
+           <li>● They will get virtual stock bonds in exchange for cash after buying a share,
+and get cash back after selling the stock.</li>
+<li>● The pricing of shares will change after every 2 minutes</li>
+<li>● A case study will be provided consisting of market news which will help to
+predict the price movement of shares.
 </li> 
+<li>● The working of the event is similar to the real market.
+</li>
           </ul>
             </div>
-            <div className="m-8 ">
-            <h3 className="text-2xl font-serif mb-4 ">ROUND 2: Presentation</h3>
-            <ul className="font-mono text-md ">
-          <li>This round will be a buzzer round.</li>
-          <li>● It will be an audio quiz based on famous advertisements of products. The
-participants have to press the buzzer as soon as they get the answer.
-</li>
-           <li>● There will be 15 questions in this round. Each question will carry 5 points for
-the correct answer, and the team with maximum points will be the winner. If
-the answer is wrong, it will lead to a deduction of two points.
-
-</li> 
-<li>● Answering incorrectly would lead to a deduction of 2 points.</li>
-<li>● The team with the highest score will be declared the winner.</li>
-          </ul>
-            </div>
+            
           </div>
        
         </div>
