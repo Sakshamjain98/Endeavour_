@@ -1,29 +1,62 @@
-import  { Component } from 'react';
-import {Particles} from 'particles.js';
+import  { useEffect } from 'react';
+import { tsParticles } from '@tsparticles/engine';
+import { loadAll } from '@tsparticles/all';
 
-class ParticleBackground extends Component {
-    componentDidMount() {
-        this.configureParticles();
-    }
+const ParticleComponent = () => {
+  useEffect(() => {
+    const loadParticles = async (options) => {
+      await loadAll(tsParticles);
+      await tsParticles.load({ id: 'tsparticles', options });
+    };
 
-    configureParticles() {
-        Particles.init({
-            selector: '#particle-container',
-            sizeVariations: 10,
-            color: ['#ffffff'],
-            connectParticles: true,
-            maxParticles: 150
-            // You can add more configurations as needed
-        });
-    }
+    const configs = {
+      particles: {
+        number: {
+          value: 100
+        },
+        color: {
+          value: '#ffffff'
+        },
+        links: {
+          enable: true,
+          distance: 200
+        },
+        shape: {
+          type: 'circle'
+        },
+        opacity: {
+          value: 1
+        },
+        size: {
+          value: {
+            min: 4,
+            max: 6
+          }
+        },
+        move: {
+          enable: true,
+          speed: 2
+        }
+      },
+      background: {
+        color: '#000000'
+      },
+      poisson: {
+        enable: true
+      }
+    };
 
-    render() {
-        return (
-            <div id="particle-container" style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', zIndex: -1 }}>
-                {/* Your website content goes here */}
-            </div>
-        );
-    }
-}
+    loadParticles(configs);
 
-export default ParticleBackground;
+    // Clean up function to unload particles when the component unmounts
+    return () => {
+      tsParticles.dom().destroy('tsparticles');
+    };
+  }, []);
+
+  return (
+   <></>
+  );
+};
+
+export default ParticleComponent;

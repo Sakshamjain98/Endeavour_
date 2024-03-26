@@ -1,12 +1,11 @@
-// App.js
-// import React from 'react';
-import ParticleBackground from './ParticleBackground';
+
 
 function App() {
     return (
         <div className="App">
-            <ParticleBackground />
-         
+            <div className="-z-10 h-half w-half">
+                {/* <ParticleBackground /> */}
+            </div>
         </div>
     );
 }
