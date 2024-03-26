@@ -35,7 +35,7 @@ export default function App() {
         }}
         pagination={true}
         modules={[EffectCube,Autoplay, Pagination, Navigation]}
-        className="mySwiper md:w-72 md:h-72 w-60 h-60 mt-32"
+        className="mySwiper md:w-72 md:h-72 w-60 h-60 md:mt-32 mt-10"
       >
         <SwiperSlide>
           <img src={one}  />
